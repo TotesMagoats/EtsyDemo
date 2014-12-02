@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 ruby "2.1.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -25,10 +25,10 @@ gem 'autoprefixer-rails'
 # Adding Paperclip ~jpacific
 gem "paperclip", "~> 4.2"
 # Adding heroku app
-group :production do
-	gem 'pg'
-	gem 'rails_12factor'
-end
+#group :production do
+gem 'pg', group: :production
+gem 'rails_12factor', group: :production
+#end
 
 group :development, :test do
 	gem 'sqlite3'
