@@ -24,6 +24,10 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 # Adding Paperclip ~jpacific
 gem "paperclip", "~> 4.2"
+# Adding Paperclip dropbox gem
+gem "paperclip-dropbox", ">= 1.1.7"
+# Adding Protection for dropbox key
+gem "figaro"
 # Adding heroku app
 #group :production do
 gem 'pg', group: :production
